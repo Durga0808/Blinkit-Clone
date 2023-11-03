@@ -7,6 +7,7 @@
 nav {
   position: sticky;
   top: 0px;
+  z-index: 1;
 }
 .vertical-line {
   height: 60px;
@@ -59,23 +60,82 @@ footer {
   text-decoration: none;
   margin: 10px;
 }
-.footer-r-1{
-    display: flex;
-    justify-content: center;
-    padding-left: 10px;
+.footer-r-1 {
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
 }
-#footer-table-1{
-    flex:2;
+#footer-table-1 {
+  flex: 2;
 }
 
-#footer-table-2{
-    flex:3;
+#footer-table-2 {
+  flex: 3;
 }
-table{
-    width: 100%;
+table {
+  width: 100%;
 }
-td{
-    font-size: 14px;
-    color: #6b6b6b;
-    padding-bottom: 10px;
+td {
+  font-size: 14px;
+  color: #6b6b6b;
+  padding-bottom: 10px;
+}
+
+.scrollable-container {
+  width: 95vw;
+  margin: auto;
+}
+
+.container-list {
+  white-space: nowrap; /*makes content to stay in present line*/
+  overflow-x: scroll;
+}
+
+.container-list > img {
+  display: inline-block; /*allows us to give height, width, margin to img's*/
+  margin: 8px;
+}
+
+.container-list::-webkit-scrollbar {
+  display: none; /*removes scroll bar*/
+}
+.category {
+  width: 95vw;
+  margin: auto;
+}
+
+.my-card {
+  width: 200px;
+  display: inline-block !important;
+  margin-inline: 1%;
+}
+.my-card > img {
+  margin-left: 10%;
+}
+.timer {
+  display: flex;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  width: fit-content;
+  height: 15px;
+}
+.timer > h6 {
+  font-size: 10px;
+  margin-left: 4px;
+}
+
+.product-name {
+  font-size: 13px;
+  margin: auto;
+  font-weight: 600;
+  overflow: hidden;
+}
+.product-weight {
+  color: #828282;
+  font-weight: 200;
+  font-size: 12px;
+}
+.product-price {
+  font-size: 15px;
+  font-weight: 900;
 }
